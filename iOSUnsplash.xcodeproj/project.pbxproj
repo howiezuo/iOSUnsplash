@@ -15,6 +15,11 @@
 		3C63F0981DB4495900976F88 /* iOSUnsplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0971DB4495900976F88 /* iOSUnsplashTests.swift */; };
 		3C63F0A31DB4495900976F88 /* iOSUnsplashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0A21DB4495900976F88 /* iOSUnsplashUITests.swift */; };
 		3C63F0BE1DB4BFC100976F88 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0BD1DB4BFC100976F88 /* .gitignore */; };
+		3C63F0C01DB4C23600976F88 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0BF1DB4C23600976F88 /* Cartfile */; };
+		3C63F0C41DB4CCC400976F88 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63F0C21DB4CCC400976F88 /* Alamofire.framework */; };
+		3C63F0C51DB4CCC400976F88 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */; };
+		3C63F0C71DB4CD3A00976F88 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C63F0C21DB4CCC400976F88 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C63F0C81DB4CD3A00976F88 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3C63F0C61DB4CD1000976F88 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3C63F0C71DB4CD3A00976F88 /* Alamofire.framework in CopyFiles */,
+				3C63F0C81DB4CD3A00976F88 /* SwiftyJSON.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3C63F07F1DB4495900976F88 /* iOSUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C63F0821DB4495900976F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +68,9 @@
 		3C63F0A21DB4495900976F88 /* iOSUnsplashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSUnsplashUITests.swift; sourceTree = "<group>"; };
 		3C63F0A41DB4495900976F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C63F0BD1DB4BFC100976F88 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = SOURCE_ROOT; };
+		3C63F0BF1DB4C23600976F88 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		3C63F0C21DB4CCC400976F88 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C63F0C41DB4CCC400976F88 /* Alamofire.framework in Frameworks */,
+				3C63F0C51DB4CCC400976F88 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,11 +103,13 @@
 		3C63F0761DB4495900976F88 = {
 			isa = PBXGroup;
 			children = (
+				3C63F0BF1DB4C23600976F88 /* Cartfile */,
 				3C63F0BD1DB4BFC100976F88 /* .gitignore */,
 				3C63F0811DB4495900976F88 /* iOSUnsplash */,
 				3C63F0961DB4495900976F88 /* iOSUnsplashTests */,
 				3C63F0A11DB4495900976F88 /* iOSUnsplashUITests */,
 				3C63F0801DB4495900976F88 /* Products */,
+				3C63F0C11DB4CCC400976F88 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +154,15 @@
 			path = iOSUnsplashUITests;
 			sourceTree = "<group>";
 		};
+		3C63F0C11DB4CCC400976F88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C63F0C21DB4CCC400976F88 /* Alamofire.framework */,
+				3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +173,7 @@
 				3C63F07B1DB4495900976F88 /* Sources */,
 				3C63F07C1DB4495900976F88 /* Frameworks */,
 				3C63F07D1DB4495900976F88 /* Resources */,
+				3C63F0C61DB4CD1000976F88 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -238,6 +274,7 @@
 				3C63F0BE1DB4BFC100976F88 /* .gitignore in Resources */,
 				3C63F08D1DB4495900976F88 /* LaunchScreen.storyboard in Resources */,
 				3C63F08A1DB4495900976F88 /* Assets.xcassets in Resources */,
+				3C63F0C01DB4C23600976F88 /* Cartfile in Resources */,
 				3C63F0881DB4495900976F88 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +453,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iOSUnsplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.howiezuo.iOSUnsplash;
@@ -428,6 +469,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = iOSUnsplash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.howiezuo.iOSUnsplash;
