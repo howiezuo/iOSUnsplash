@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SwiftyJSON
 import Kingfisher
 
 class MainCell: UITableViewCell {
@@ -25,11 +24,10 @@ class MainCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    func showCell(_ photo: JSON) {
-        self.backgroundColor = UIColor(hexString: photo["color"].string!)
+    func showCell(_ photo: Photo) {
+        self.backgroundColor = UIColor(hexString: photo.color!)
         
-        let urls = photo["urls"].dictionaryValue
-        let url = URL(string: (urls["small"]?.stringValue)!)
+        let url = URL(string: (photo.urls?.small)!)
         self.photo.kf.setImage(with: url)
     }
 }

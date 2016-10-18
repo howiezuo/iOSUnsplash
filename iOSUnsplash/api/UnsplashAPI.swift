@@ -8,7 +8,7 @@
 
 import Foundation
 import Alamofire
-import SwiftyJSON
+import ObjectMapper
 
 
 class UnsplashAPI {
@@ -19,14 +19,13 @@ class UnsplashAPI {
         "Authorization": "Client-ID bb0b8493dba89c5b8765bdca724c00c3766b20971017f3315536ba19856e6287"
     ]
     
-    func getPhotos(callback: @escaping (_ result: JSON) -> Void) {
+    func getPhotos(callback: @escaping (_ result: [Photo]) -> Void) {
         let url = UnsplashAPI.API_URL + "photos?per_page=20"
         Alamofire.request(url, headers: UnsplashAPI.HEADERS)
         .responseJSON { (response) in
             
-            let json = JSON(response.result.value)
-            
-            callback(json)
+            let photos = Mapper<Photo>().mapArray(JSONObject: response.result.value)            
+            callback(photos!)
         }
     }
 }

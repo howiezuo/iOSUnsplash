@@ -16,7 +16,6 @@
 		3C63F0BE1DB4BFC100976F88 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0BD1DB4BFC100976F88 /* .gitignore */; };
 		3C63F0C01DB4C23600976F88 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0BF1DB4C23600976F88 /* Cartfile */; };
 		3C63F0C41DB4CCC400976F88 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63F0C21DB4CCC400976F88 /* Alamofire.framework */; };
-		3C63F0C51DB4CCC400976F88 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */; };
 		3C63F0CB1DB4D0DB00976F88 /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0CA1DB4D0DB00976F88 /* UnsplashAPI.swift */; };
 		3C63F0CE1DB4E55300976F88 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0CD1DB4E55300976F88 /* UIColorExtension.swift */; };
 		3C63F0D11DB507F400976F88 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0D01DB507F400976F88 /* MainCell.swift */; };
@@ -24,6 +23,12 @@
 		3C63F0DA1DB5B26300976F88 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0D91DB5B26300976F88 /* Detail.storyboard */; };
 		3C63F0DC1DB5BAAE00976F88 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0DB1DB5BAAE00976F88 /* DetailViewController.swift */; };
 		3C63F0DE1DB5D02200976F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0DD1DB5D02200976F88 /* Main.storyboard */; };
+		3C63F0E01DB6198500976F88 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63F0DF1DB6198500976F88 /* ObjectMapper.framework */; };
+		3C63F0E31DB61A7D00976F88 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0E21DB61A7D00976F88 /* Photo.swift */; };
+		3C63F0E71DB6269A00976F88 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0E61DB6269A00976F88 /* User.swift */; };
+		3C63F0E91DB6280F00976F88 /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0E81DB6280F00976F88 /* ProfileImage.swift */; };
+		3C63F0EB1DB628A600976F88 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0EA1DB628A600976F88 /* Links.swift */; };
+		3C63F0ED1DB629D700976F88 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0EC1DB629D700976F88 /* Urls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,12 @@
 		3C63F0D91DB5B26300976F88 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 		3C63F0DB1DB5BAAE00976F88 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		3C63F0DD1DB5D02200976F88 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3C63F0DF1DB6198500976F88 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		3C63F0E21DB61A7D00976F88 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = model/Photo.swift; sourceTree = "<group>"; };
+		3C63F0E61DB6269A00976F88 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = model/User.swift; sourceTree = "<group>"; };
+		3C63F0E81DB6280F00976F88 /* ProfileImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileImage.swift; path = model/ProfileImage.swift; sourceTree = "<group>"; };
+		3C63F0EA1DB628A600976F88 /* Links.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Links.swift; path = model/Links.swift; sourceTree = "<group>"; };
+		3C63F0EC1DB629D700976F88 /* Urls.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Urls.swift; path = model/Urls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +87,7 @@
 			files = (
 				3C63F0C41DB4CCC400976F88 /* Alamofire.framework in Frameworks */,
 				3C63F0D31DB51C3B00976F88 /* Kingfisher.framework in Frameworks */,
-				3C63F0C51DB4CCC400976F88 /* SwiftyJSON.framework in Frameworks */,
+				3C63F0E01DB6198500976F88 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +134,7 @@
 		3C63F0811DB4495900976F88 /* iOSUnsplash */ = {
 			isa = PBXGroup;
 			children = (
+				3C63F0E11DB619C600976F88 /* model */,
 				3C63F0C91DB4D0B200976F88 /* api */,
 				3C63F0D81DB5B23B00976F88 /* detail */,
 				3C63F0CC1DB4E4F600976F88 /* extension */,
@@ -156,6 +168,7 @@
 		3C63F0C11DB4CCC400976F88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C63F0DF1DB6198500976F88 /* ObjectMapper.framework */,
 				3C63F0D21DB51C3B00976F88 /* Kingfisher.framework */,
 				3C63F0C21DB4CCC400976F88 /* Alamofire.framework */,
 				3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */,
@@ -196,6 +209,18 @@
 				3C63F0DB1DB5BAAE00976F88 /* DetailViewController.swift */,
 			);
 			path = detail;
+			sourceTree = "<group>";
+		};
+		3C63F0E11DB619C600976F88 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				3C63F0E21DB61A7D00976F88 /* Photo.swift */,
+				3C63F0E61DB6269A00976F88 /* User.swift */,
+				3C63F0E81DB6280F00976F88 /* ProfileImage.swift */,
+				3C63F0EA1DB628A600976F88 /* Links.swift */,
+				3C63F0EC1DB629D700976F88 /* Urls.swift */,
+			);
+			name = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,9 +363,9 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)//Carthage/Build/iOS/Alamofire.framework",
-				"$(SRCROOT)//Carthage/Build/iOS/Kingfisher.framework",
-				"$(SRCROOT)//Carthage/Build/iOS/SwiftyJSON.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 			);
 			outputPaths = (
 			);
@@ -355,9 +380,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C63F0E31DB61A7D00976F88 /* Photo.swift in Sources */,
 				3C63F0851DB4495900976F88 /* MainViewController.swift in Sources */,
 				3C63F0D11DB507F400976F88 /* MainCell.swift in Sources */,
 				3C63F0CB1DB4D0DB00976F88 /* UnsplashAPI.swift in Sources */,
+				3C63F0ED1DB629D700976F88 /* Urls.swift in Sources */,
+				3C63F0E91DB6280F00976F88 /* ProfileImage.swift in Sources */,
+				3C63F0EB1DB628A600976F88 /* Links.swift in Sources */,
+				3C63F0E71DB6269A00976F88 /* User.swift in Sources */,
 				3C63F0DC1DB5BAAE00976F88 /* DetailViewController.swift in Sources */,
 				3C63F0831DB4495900976F88 /* AppDelegate.swift in Sources */,
 				3C63F0CE1DB4E55300976F88 /* UIColorExtension.swift in Sources */,

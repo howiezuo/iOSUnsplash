@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import SwiftyJSON
 
 class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var photos = [JSON]()
+    var photos = [Photo]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +22,7 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         let api = UnsplashAPI()
         api.getPhotos { (result) in
-            self.photos = result.arrayValue
+            self.photos = result
             
             self.tableView.reloadData()
         }

@@ -7,22 +7,20 @@
 //
 
 import UIKit
-import SwiftyJSON
 import Kingfisher
 
 class DetailViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
-    var photo: JSON!
+    var photo: Photo!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        let urls = photo["urls"].dictionaryValue
-        let url = URL(string: (urls["regular"]?.stringValue)!)
+        let url = URL(string: (photo.urls?.regular)!)
         imageView.kf.setImage(with: url)
     }
 

@@ -2,6 +2,6 @@
 
 github "Alamofire/Alamofire" ~> 4.0
 
-github "SwiftyJSON/SwiftyJSON"
+github "Hearst-DD/ObjectMapper" ~> 2.1
 
 github "onevcat/Kingfisher" ~> 3.0
