@@ -18,8 +18,10 @@
 		3C63F0C01DB4C23600976F88 /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0BF1DB4C23600976F88 /* Cartfile */; };
 		3C63F0C41DB4CCC400976F88 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63F0C21DB4CCC400976F88 /* Alamofire.framework */; };
 		3C63F0C51DB4CCC400976F88 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */; };
-		3C63F0C71DB4CD3A00976F88 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C63F0C21DB4CCC400976F88 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		3C63F0C81DB4CD3A00976F88 /* SwiftyJSON.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3C63F0CB1DB4D0DB00976F88 /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0CA1DB4D0DB00976F88 /* UnsplashAPI.swift */; };
+		3C63F0CE1DB4E55300976F88 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0CD1DB4E55300976F88 /* UIColorExtension.swift */; };
+		3C63F0D11DB507F400976F88 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0D01DB507F400976F88 /* PhotoCell.swift */; };
+		3C63F0D31DB51C3B00976F88 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63F0D21DB51C3B00976F88 /* Kingfisher.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,20 +41,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		3C63F0C61DB4CD1000976F88 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				3C63F0C71DB4CD3A00976F88 /* Alamofire.framework in CopyFiles */,
-				3C63F0C81DB4CD3A00976F88 /* SwiftyJSON.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		3C63F07F1DB4495900976F88 /* iOSUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C63F0821DB4495900976F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +59,10 @@
 		3C63F0BF1DB4C23600976F88 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		3C63F0C21DB4CCC400976F88 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		3C63F0CA1DB4D0DB00976F88 /* UnsplashAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnsplashAPI.swift; path = api/UnsplashAPI.swift; sourceTree = "<group>"; };
+		3C63F0CD1DB4E55300976F88 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = extension/UIColorExtension.swift; sourceTree = "<group>"; };
+		3C63F0D01DB507F400976F88 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = view/PhotoCell.swift; sourceTree = "<group>"; };
+		3C63F0D21DB51C3B00976F88 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C63F0C41DB4CCC400976F88 /* Alamofire.framework in Frameworks */,
+				3C63F0D31DB51C3B00976F88 /* Kingfisher.framework in Frameworks */,
 				3C63F0C51DB4CCC400976F88 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +119,9 @@
 		3C63F0811DB4495900976F88 /* iOSUnsplash */ = {
 			isa = PBXGroup;
 			children = (
+				3C63F0C91DB4D0B200976F88 /* api */,
+				3C63F0CC1DB4E4F600976F88 /* extension */,
+				3C63F0CF1DB5078500976F88 /* view */,
 				3C63F0821DB4495900976F88 /* AppDelegate.swift */,
 				3C63F0841DB4495900976F88 /* ViewController.swift */,
 				3C63F0861DB4495900976F88 /* Main.storyboard */,
@@ -157,10 +153,35 @@
 		3C63F0C11DB4CCC400976F88 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3C63F0D21DB51C3B00976F88 /* Kingfisher.framework */,
 				3C63F0C21DB4CCC400976F88 /* Alamofire.framework */,
 				3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3C63F0C91DB4D0B200976F88 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				3C63F0CA1DB4D0DB00976F88 /* UnsplashAPI.swift */,
+			);
+			name = api;
+			sourceTree = "<group>";
+		};
+		3C63F0CC1DB4E4F600976F88 /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				3C63F0CD1DB4E55300976F88 /* UIColorExtension.swift */,
+			);
+			name = extension;
+			sourceTree = "<group>";
+		};
+		3C63F0CF1DB5078500976F88 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				3C63F0D01DB507F400976F88 /* PhotoCell.swift */,
+			);
+			name = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +194,7 @@
 				3C63F07B1DB4495900976F88 /* Sources */,
 				3C63F07C1DB4495900976F88 /* Frameworks */,
 				3C63F07D1DB4495900976F88 /* Resources */,
-				3C63F0C61DB4CD1000976F88 /* CopyFiles */,
+				3C63F0D61DB51CE200976F88 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -295,13 +316,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3C63F0D61DB51CE200976F88 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)//Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)//Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)//Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3C63F07B1DB4495900976F88 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3C63F0851DB4495900976F88 /* ViewController.swift in Sources */,
+				3C63F0D11DB507F400976F88 /* PhotoCell.swift in Sources */,
+				3C63F0CB1DB4D0DB00976F88 /* UnsplashAPI.swift in Sources */,
 				3C63F0831DB4495900976F88 /* AppDelegate.swift in Sources */,
+				3C63F0CE1DB4E55300976F88 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

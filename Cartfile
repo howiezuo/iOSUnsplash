@@ -3,3 +3,5 @@
 github "Alamofire/Alamofire" ~> 4.0
 
 github "SwiftyJSON/SwiftyJSON"
+
+github "onevcat/Kingfisher" ~> 3.0
