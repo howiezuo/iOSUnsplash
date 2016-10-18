@@ -20,11 +20,17 @@ class MainViewController: UIViewController, UITableViewDataSource, UITableViewDe
         
         tableView.delegate = self
         
-        let api = UnsplashAPI()
-        api.getPhotos { (result) in
-            self.photos = result
+        let _ = APIClient.getPhotos()
+        .subscribe(onNext: { (photos) in
+                self.photos = photos
             
-            self.tableView.reloadData()
+                self.tableView.reloadData()
+            }, onError: { (error) in
+                //
+            }, onCompleted: { 
+                //
+            }) { 
+                //
         }
     }
 

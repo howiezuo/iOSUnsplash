@@ -11,7 +11,7 @@ import Alamofire
 import ObjectMapper
 
 
-class UnsplashAPI {
+class APIClient {
     
     static let API_URL = "https://api.unsplash.com/"
     static let HEADERS: HTTPHeaders = [
