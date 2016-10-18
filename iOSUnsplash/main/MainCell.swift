@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 import Kingfisher
 
-class PhotoCell: UITableViewCell {
+class MainCell: UITableViewCell {
     
     @IBOutlet weak var photo: UIImageView!
     

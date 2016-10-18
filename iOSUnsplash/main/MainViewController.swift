@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! PhotoCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! MainCell
         
         let photo = photos[indexPath.item]
         cell.showCell(photo)
@@ -58,5 +58,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let h = width / 1.6
         return h
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let photo = self.photos[indexPath.item]
+        let storyBoard = UIStoryboard(name: "Detail", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "DetailViewController") as! DetailViewController
+        vc.photo = photo
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 

@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3C63F0831DB4495900976F88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0821DB4495900976F88 /* AppDelegate.swift */; };
-		3C63F0851DB4495900976F88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0841DB4495900976F88 /* ViewController.swift */; };
-		3C63F0881DB4495900976F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0861DB4495900976F88 /* Main.storyboard */; };
+		3C63F0851DB4495900976F88 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0841DB4495900976F88 /* MainViewController.swift */; };
 		3C63F08A1DB4495900976F88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0891DB4495900976F88 /* Assets.xcassets */; };
 		3C63F08D1DB4495900976F88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F08B1DB4495900976F88 /* LaunchScreen.storyboard */; };
 		3C63F0981DB4495900976F88 /* iOSUnsplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0971DB4495900976F88 /* iOSUnsplashTests.swift */; };
@@ -20,8 +19,11 @@
 		3C63F0C51DB4CCC400976F88 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */; };
 		3C63F0CB1DB4D0DB00976F88 /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0CA1DB4D0DB00976F88 /* UnsplashAPI.swift */; };
 		3C63F0CE1DB4E55300976F88 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0CD1DB4E55300976F88 /* UIColorExtension.swift */; };
-		3C63F0D11DB507F400976F88 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0D01DB507F400976F88 /* PhotoCell.swift */; };
+		3C63F0D11DB507F400976F88 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0D01DB507F400976F88 /* MainCell.swift */; };
 		3C63F0D31DB51C3B00976F88 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C63F0D21DB51C3B00976F88 /* Kingfisher.framework */; };
+		3C63F0DA1DB5B26300976F88 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0D91DB5B26300976F88 /* Detail.storyboard */; };
+		3C63F0DC1DB5BAAE00976F88 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63F0DB1DB5BAAE00976F88 /* DetailViewController.swift */; };
+		3C63F0DE1DB5D02200976F88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C63F0DD1DB5D02200976F88 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +46,7 @@
 /* Begin PBXFileReference section */
 		3C63F07F1DB4495900976F88 /* iOSUnsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSUnsplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C63F0821DB4495900976F88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3C63F0841DB4495900976F88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3C63F0871DB4495900976F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3C63F0841DB4495900976F88 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		3C63F0891DB4495900976F88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3C63F08C1DB4495900976F88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C63F08E1DB4495900976F88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,10 +60,13 @@
 		3C63F0BF1DB4C23600976F88 /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		3C63F0C21DB4CCC400976F88 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		3C63F0C31DB4CCC400976F88 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
-		3C63F0CA1DB4D0DB00976F88 /* UnsplashAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnsplashAPI.swift; path = api/UnsplashAPI.swift; sourceTree = "<group>"; };
-		3C63F0CD1DB4E55300976F88 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = extension/UIColorExtension.swift; sourceTree = "<group>"; };
-		3C63F0D01DB507F400976F88 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = view/PhotoCell.swift; sourceTree = "<group>"; };
+		3C63F0CA1DB4D0DB00976F88 /* UnsplashAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
+		3C63F0CD1DB4E55300976F88 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		3C63F0D01DB507F400976F88 /* MainCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		3C63F0D21DB51C3B00976F88 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		3C63F0D91DB5B26300976F88 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		3C63F0DB1DB5BAAE00976F88 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		3C63F0DD1DB5D02200976F88 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,13 +100,13 @@
 		3C63F0761DB4495900976F88 = {
 			isa = PBXGroup;
 			children = (
-				3C63F0BF1DB4C23600976F88 /* Cartfile */,
-				3C63F0BD1DB4BFC100976F88 /* .gitignore */,
+				3C63F0C11DB4CCC400976F88 /* Frameworks */,
+				3C63F0801DB4495900976F88 /* Products */,
 				3C63F0811DB4495900976F88 /* iOSUnsplash */,
 				3C63F0961DB4495900976F88 /* iOSUnsplashTests */,
 				3C63F0A11DB4495900976F88 /* iOSUnsplashUITests */,
-				3C63F0801DB4495900976F88 /* Products */,
-				3C63F0C11DB4CCC400976F88 /* Frameworks */,
+				3C63F0BD1DB4BFC100976F88 /* .gitignore */,
+				3C63F0BF1DB4C23600976F88 /* Cartfile */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,14 +124,13 @@
 			isa = PBXGroup;
 			children = (
 				3C63F0C91DB4D0B200976F88 /* api */,
+				3C63F0D81DB5B23B00976F88 /* detail */,
 				3C63F0CC1DB4E4F600976F88 /* extension */,
-				3C63F0CF1DB5078500976F88 /* view */,
+				3C63F0D71DB5B13900976F88 /* main */,
 				3C63F0821DB4495900976F88 /* AppDelegate.swift */,
-				3C63F0841DB4495900976F88 /* ViewController.swift */,
-				3C63F0861DB4495900976F88 /* Main.storyboard */,
 				3C63F0891DB4495900976F88 /* Assets.xcassets */,
-				3C63F08B1DB4495900976F88 /* LaunchScreen.storyboard */,
 				3C63F08E1DB4495900976F88 /* Info.plist */,
+				3C63F08B1DB4495900976F88 /* LaunchScreen.storyboard */,
 			);
 			path = iOSUnsplash;
 			sourceTree = "<group>";
@@ -135,8 +138,8 @@
 		3C63F0961DB4495900976F88 /* iOSUnsplashTests */ = {
 			isa = PBXGroup;
 			children = (
-				3C63F0971DB4495900976F88 /* iOSUnsplashTests.swift */,
 				3C63F0991DB4495900976F88 /* Info.plist */,
+				3C63F0971DB4495900976F88 /* iOSUnsplashTests.swift */,
 			);
 			path = iOSUnsplashTests;
 			sourceTree = "<group>";
@@ -144,8 +147,8 @@
 		3C63F0A11DB4495900976F88 /* iOSUnsplashUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3C63F0A21DB4495900976F88 /* iOSUnsplashUITests.swift */,
 				3C63F0A41DB4495900976F88 /* Info.plist */,
+				3C63F0A21DB4495900976F88 /* iOSUnsplashUITests.swift */,
 			);
 			path = iOSUnsplashUITests;
 			sourceTree = "<group>";
@@ -165,7 +168,7 @@
 			children = (
 				3C63F0CA1DB4D0DB00976F88 /* UnsplashAPI.swift */,
 			);
-			name = api;
+			path = api;
 			sourceTree = "<group>";
 		};
 		3C63F0CC1DB4E4F600976F88 /* extension */ = {
@@ -173,15 +176,26 @@
 			children = (
 				3C63F0CD1DB4E55300976F88 /* UIColorExtension.swift */,
 			);
-			name = extension;
+			path = extension;
 			sourceTree = "<group>";
 		};
-		3C63F0CF1DB5078500976F88 /* view */ = {
+		3C63F0D71DB5B13900976F88 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				3C63F0D01DB507F400976F88 /* PhotoCell.swift */,
+				3C63F0DD1DB5D02200976F88 /* Main.storyboard */,
+				3C63F0D01DB507F400976F88 /* MainCell.swift */,
+				3C63F0841DB4495900976F88 /* MainViewController.swift */,
 			);
-			name = view;
+			path = main;
+			sourceTree = "<group>";
+		};
+		3C63F0D81DB5B23B00976F88 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				3C63F0D91DB5B26300976F88 /* Detail.storyboard */,
+				3C63F0DB1DB5BAAE00976F88 /* DetailViewController.swift */,
+			);
+			path = detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,11 +306,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C63F0DE1DB5D02200976F88 /* Main.storyboard in Resources */,
 				3C63F0BE1DB4BFC100976F88 /* .gitignore in Resources */,
 				3C63F08D1DB4495900976F88 /* LaunchScreen.storyboard in Resources */,
 				3C63F08A1DB4495900976F88 /* Assets.xcassets in Resources */,
 				3C63F0C01DB4C23600976F88 /* Cartfile in Resources */,
-				3C63F0881DB4495900976F88 /* Main.storyboard in Resources */,
+				3C63F0DA1DB5B26300976F88 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +355,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C63F0851DB4495900976F88 /* ViewController.swift in Sources */,
-				3C63F0D11DB507F400976F88 /* PhotoCell.swift in Sources */,
+				3C63F0851DB4495900976F88 /* MainViewController.swift in Sources */,
+				3C63F0D11DB507F400976F88 /* MainCell.swift in Sources */,
 				3C63F0CB1DB4D0DB00976F88 /* UnsplashAPI.swift in Sources */,
+				3C63F0DC1DB5BAAE00976F88 /* DetailViewController.swift in Sources */,
 				3C63F0831DB4495900976F88 /* AppDelegate.swift in Sources */,
 				3C63F0CE1DB4E55300976F88 /* UIColorExtension.swift in Sources */,
 			);
@@ -380,20 +396,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3C63F0861DB4495900976F88 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C63F0871DB4495900976F88 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3C63F08B1DB4495900976F88 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3C63F08C1DB4495900976F88 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
